@@ -751,14 +751,6 @@ html {
   }
 }
 
-.school_name{
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 24px;
-  color: #033e87;
-}
-
 .school_notifications{
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -772,4 +764,47 @@ html {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
+}
+
+.school_name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  color: #033e87;
+}
+
+
+/* Media queries for smaller screens */
+@media (max-width: 1200px) {
+  .school_name {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .school_name {
+    font-size: 3vw;
+  }
+  .image_footer_down{
+    width: 30px;
+    height: 30px;
+  }  
+}
+
+@media (min-width: 768px) {
+  .btn-close {
+    padding-top: 2%;
+  }
+}
+
+.btn-close {
+  padding-top: 3%;
+}
+
+
+@media (max-width: 576px) {
+  .school_name {
+    font-size: 5vw;
+  }
 }

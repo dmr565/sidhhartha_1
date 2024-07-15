@@ -1410,9 +1410,7 @@ h2 {
   }
 
   .btn-close {
-
     font-size: 0.875rem; /* 14px */
-    padding-top: 2%;
   }
 
 }
@@ -1463,8 +1461,19 @@ h2 {
   .image_footer_down{
     width: 30px;
     height: 30px;
+  }  
+}
+
+@media (min-width: 768px) {
+  .btn-close {
+    padding-top: 2%;
   }
 }
+
+.btn-close {
+  padding-top: 3%;
+}
+
 
 @media (max-width: 576px) {
   .school_name {
