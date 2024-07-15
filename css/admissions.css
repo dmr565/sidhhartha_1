@@ -786,10 +786,6 @@ html {
   .school_name {
     font-size: 3vw;
   }
-  .image_footer_down{
-    width: 30px;
-    height: 30px;
-  }  
 }
 
 @media (min-width: 768px) {
@@ -802,9 +798,12 @@ html {
   padding-top: 3%;
 }
 
-
 @media (max-width: 576px) {
   .school_name {
     font-size: 5vw;
   }
+  .image_footer_down{
+    width: 30px;
+    height: 30px;
+  }  
 }
