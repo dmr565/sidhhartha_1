@@ -291,3 +291,34 @@ a{
 .modal-header{
     background-color: #00d7f6;
 }
+
+
+@media (min-width:320px){
+    .cards_section {
+        margin-top: -1%;
+}
+}
+
+@media (min-width:360px){
+    .cards_section {
+        margin-top: 8%;
+}
+}
+
+@media (min-width:375px){
+    .cards_section {
+        margin-top: 5%;
+}
+}
+
+@media (min-width:425px){
+    .cards_section {
+        margin-top: 9%;
+}
+}
+
+@media (min-width:600px){
+    .cards_section {
+        margin-top: 12%;
+}
+}
