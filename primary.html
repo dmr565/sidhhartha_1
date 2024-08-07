@@ -122,15 +122,16 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="imageModalLabel">Image</h5>
-                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                    <h5 class="modal-title" id="imageModalLabel">Image Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img id="modalImage" src="" alt="..." class="img-fluid">
+                    <img id="modalImage" src="" alt="Image" class="img-fluid">
                 </div>
             </div>
         </div>
     </div>
+    
 
 
     <script>
@@ -151,13 +152,6 @@
         window.addEventListener('load', function () {
             document.querySelector('.pre-loader').className += ' hidden';
         });
-
-        function closeModal() {
-        var myModal = new bootstrap.Modal(document.getElementById('imageModal'), {
-            keyboard: false
-        });
-        myModal.hide();
-    }
     </script>
 
 
