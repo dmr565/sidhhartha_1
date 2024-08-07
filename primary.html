@@ -151,10 +151,19 @@
         window.addEventListener('load', function () {
             document.querySelector('.pre-loader').className += ' hidden';
         });
-    </script>
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
+        function closeModal() {
+        var myModal = new bootstrap.Modal(document.getElementById('imageModal'), {
+            keyboard: false
+        });
+        myModal.hide();
+    }
+    </script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/index.js"></script>
 </body>
