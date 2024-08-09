@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/10thclass.css">
+
+    <!-- Icons link -->
+    <script src="https://kit.fontawesome.com/c1483df8ea.js" crossorigin="anonymous"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/fav-1.png" type="image/x-icon">
+
+    <!-- google icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>8th Class</title>
+
+    <style>
+        .loading-gif {
+            max-width: 500px;
+        }
+
+        .pre-loader {
+            position: fixed;
+            z-index: 100; /** make sure this is the highest value compared to all other divs **/
+            top: 0;
+            left: 0;
+            background: #191f26;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .pre-loader.hidden {
+            animation: fadeOut 2s; /** change to 1s */
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeOut {
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
+
+</head>
+
+    <!-- navbar -->
+    <header>
+        <nav class="navbar navbar-light bg-transparent fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/fav-1.png" alt="Logo" width="30" height="40" >
+                Sai Siddhartha High School
+            </a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-black" id="offcanvasNavbarLabel">Topics</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">School Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="preprimary.html">Pre-Primary school</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="preprimary.html">Primary School</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="secondary.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="6thclass.html">6th class</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="7thclass.html">7th class</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="8thclass.html">8th class</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="9thclass.html">9th class</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="10thclass.html">10th class</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    
+    <section id="cards_section1">
+        <div class="cards_section">
+            <div class="card card1" style="width: 12rem;" data-bs-toggle="modal" data-bs-target="#popupModal">
+                <a href="#"><img src="images/secondary/10thclass/women.png" class="card-img-top" alt="Women Empowerment"></a>
+                <div class="card-body">
+                    <p class="card-text">S.UJWALA 10A</p>
+                </div>
+            </div>
+            <div class="card card1" style="width: 12rem;" data-bs-toggle="modal" data-bs-target="#popupModal1">
+                <a href="#"><img src="images/secondary/10thclass/independenceday.png" class="card-img-top" alt="Independence Day"></a>
+                <div class="card-body">
+                    <p class="card-text">B. Yesu Kumar 10C</p>
+                </div>
+            </div>
+            <div class="card card1" style="width: 12rem;" data-bs-toggle="modal" data-bs-target="#popupModal3">
+                <a href="#"><img src="images/secondary/10thclass/Drawing.png" class="card-img-top" alt="..." ></a>
+                <div class="card-body">
+                    <p class="card-text">S.UJWALA 10A</p>
+                </div>
+            </div>  
+        </div>
+    </section>
+    
+    <div class='pre-loader'>
+        <img class='loading-gif' alt='loading' src="https://media0.giphy.com/media/11FuEnXyGsXFba/source.gif"/>
+    </div>
+
+    <script type='text/javascript'>
+        window.addEventListener('load', function () {
+            document.querySelector('.pre-loader').classList.add('hidden');
+        });
+    </script>
+
+    <!-- Women Empowerment Modal -->
+    <div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="popupModalLabel">Women Empowerment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-body1" style="text-align: justify;">
+                    <p>Women empowerment is not just a catchy slogan; it's a vital factor in the success of nations. When women succeed, everyone benefits, and a strong society is established. Women play an equal and essential role in society, and their contributions are invaluable. The age-old adage 'the hands that rock the cradle rule the world' rings true, as women are the primary caregivers and nurturers of future generations.</p>
+                    <p>There is no question of inferiority or superiority between men and women; rather, they are two wheels that rotate together in harmony. As women gain power and break down barriers, they become a force to be reckoned with. Educating women is key to reducing risks and improving their existence. In fact, educating a woman has a ripple effect, educating the next generation.</p>
+                    <p>Girls and women are capable of achieving anything they set their minds to. They are the foundation of a beautiful life, and their empowerment is essential for building a better world. By supporting women's empowerment, we can create a more inclusive, equitable, and prosperous society for all.</p>
+                    <p>Some additional points to consider:</p>
+                    <ul>
+                        <li>Women's empowerment leads to increased economic growth, improved healthcare, and better education.</li>
+                        <li>Empowered women are more likely to participate in decision-making processes, leading to more inclusive and equitable societies.</li>
+                        <li>Women's empowerment is linked to reduced poverty, hunger, and inequality.</li>
+                        <li>Educating women has a positive impact on their families, communities, and societies as a whole.</li>
+                        <li>Women's empowerment is essential for achieving gender equality and human rights.</li>
+                    </ul>
+                    <p style="text-align: center;">
+                        <img src="images/secondary/10thclass/1st.jpg" alt="" width="60" height="80"><br><br>
+                        <b>WRITTEN BY <br>S.UJWALA 10A</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Independence Modal -->
+    <div class="modal fade" id="popupModal1" tabindex="-1" aria-labelledby="popupModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="popupModal1Label">Independence Day</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="text-align: justify;">
+                    <p>Independence refers to the state of being free from control or influence by another person, country, or authority. For India, the significance of independence is deeply rooted in its history, marked by the pivotal moment of August 15, 1947. On this day, India achieved freedom from British rule, a milestone realized through the enactment of the Indian Independence Act. This legislation transferred legislative sovereignty to the Indian Constituent Assembly, which was responsible for shaping the country's future. Initially, India retained King George VI as the head of state until it transitioned to a republic on January 26, 1950. On that date, the Constitution of India came into effect, officially replacing the title "Dominion of India" with "Republic of India" and establishing the country as a sovereign nation.</p>
+                    <p>India's path to independence was fraught with challenges and turmoil. The partition of British India into India and Pakistan resulted in widespread violence and the displacement of nearly 15 million people, a tragic consequence of the division based on religious lines. Amidst these tumultuous events, several key movements played a crucial role in the struggle for freedom. The Quit India Movement, led by Mahatma Gandhi, represented a significant effort to challenge British colonial rule through a campaign of nonviolent resistance. Similarly, the Revolt of 1857, also known as the Sepoy Mutiny, marked an early and significant uprising against British dominance, initiated by Indian soldiers in the Bengal presidency. Another important chapter was the Non-Cooperation Movement, which emerged in response to the Jallianwala Bagh massacre of 1919, symbolizing a new phase in India's fight for freedom.</p>
+                    <p>India's struggle for independence spanned nearly two centuries, a prolonged battle against the oppressive British Raj. Despite the daily challenges faced by freedom fighters, key events during this period shook the foundations of British rule and paved the way for India’s eventual liberation on August 15, 1947. As of 2024, India will celebrate its 78th Independence Day, commemorating 77 years of freedom.</p>
+                    <p>The struggle for independence was also marked by powerful slogans that inspired and mobilized people. Among these, "Jai Hind" and "Vande Mataram" became iconic expressions of patriotism and devotion to the nation. Slogans such as "Aaraam Haraam Hai" (Comfort is a sin) and "Karo ya maro" (Do or die) reflected the determination of those fighting for their rights and freedom. The principles of freedom were encapsulated in phrases like "Without freedom, life has no meaning," "Satyameva Jayate" (Truth alone triumphs), and "Freedom is nothing but a chance to be better," each emphasizing the profound significance of liberty in shaping a nation’s destiny.</p>
+                    <p style="text-align: center;">
+                        <img src="images/secondary/10thclass/2nd.jpg" alt="" width="60" height="80"><br><br>
+                        <b>WRITTEN BY <br>B. Yesu Kumar 10C</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="popupModal3" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="popupModalLabel">Drawings</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-body3">
+                    <img src="images/secondary/10thclass/draw/UJWALA 10 2.jpg" alt="" class="modal-img modal-img3">
+                    <img src="images/secondary/10thclass/draw/ujwala 10.jpg" alt="" class="modal-img modal-img3">
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="js/js2/bootstrap.bundle.min.js"></script>
+    <script src="js/js2/jquery.slim.min.js"></script>
+    <script src="js/js2/index.js"></script>
+</body>
+</html>

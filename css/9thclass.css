@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background-image: url('/images/secondary/sbg.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background covers the viewport */
+    background-attachment: scroll; /* Change to scroll to prevent zooming on mobile */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0; /* Remove default margin */
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 767px) {
+    body {
+        background-image: none;
+    }
+}
+/*------------------------------------*/
+
+.navbar{
+    padding: 1% 1.5%;
+}
+
+.offcanvas-header{
+    padding-top: 30px;
+}
+
+.navbar-brand{
+    font-weight: 500;
+}
+
+
+@media (min-width:320px){
+    .navbar{
+        margin-top: 10px;
+        padding: 4% 1.5%;
+    }
+    .navbar-brand{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .navbar-brand img{
+        width: 20px;
+        height: 25px;
+    }
+    .navbar-toggler-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .nav-link{
+        font-size: 12px;
+    }
+    .offcanvas-title{
+        font-size: 15px;
+    }
+}
+
+@media (min-width:360px){
+    .navbar{
+        padding: 6% 1.5%;
+    }
+    .navbar-brand{
+        font-size: 15px;
+    }
+    .navbar-brand img{
+        width: 23px;
+        height: 30px;
+    }
+    .navbar-toggler-icon{
+        width: 25px;
+        height: 25px;
+    }
+    .nav-link{
+        font-size: 14px;
+        padding: 3% 0 ;
+        font-weight: 500;
+    }
+    .offcanvas-title{
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width:414px){   
+    .navbar-brand{
+        font-size: 14px;
+    }
+    .navbar-toggler-icon{
+        width: 23px;
+        height: 23px;
+    }
+}
+
+@media (min-width:480px){
+    .navbar{
+        padding: 5% 1.5%;
+    }
+    .navbar-brand{
+        font-size: 18px;
+    }
+    .navbar-brand img{
+        width: 32px;
+        height: 42px;
+    }
+    .navbar-toggler-icon{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-link{
+        font-size: 15px;
+    }
+    .offcanvas-title{
+        font-size: 18px;
+    }
+}
+
+@media (min-width:768px){
+    .navbar{
+        padding: 3.5% 2.5%;
+    }
+    .navbar-brand{
+        font-size: 20px;
+    }
+    .navbar-brand img{
+        width: 33px;
+        height: 43px;
+    }
+    .nav-link{
+        font-size: 18px;
+    }
+    .offcanvas-title{
+        font-size: 20px;
+    }
+    .offcanvas-header{
+        padding-top: 50px;
+    }
+}
+
+@media (min-width:991px){
+    .navbar{
+        padding: 2.8% 1.8%;
+    }
+    .navbar-brand{
+        font-size: 19px;
+    }
+    .navbar-brand img{
+        width: 30px;
+        height: 40px;
+    }
+    .navbar-toggler-icon{
+        width: 35px;
+        height: 35px;
+    }
+    .nav-link{
+        font-size: 17px;
+    }
+    .offcanvas-title{
+        font-size: 21px;
+    }
+    
+}
+
+@media (min-width:1024px){
+    .navbar{
+        padding: 2.5% 1.8%;
+    }
+    .navbar-brand{
+        font-size: 16px;
+    }
+    .navbar-brand img{
+        width: 25px;
+        height: 35px;
+    }
+    .navbar-toggler-icon{
+        width: 25px;
+        height: 25px;
+    }
+    .nav-link{
+        font-size: 14px;
+    }
+    .offcanvas-title{
+        font-size: 16px;
+    }
+    .offcanvas-header{
+        padding-top: 45px;
+    }
+}
+
+@media (min-width:1440px){
+    .navbar{
+        padding: 1.5% 2.3%;
+    }
+    .navbar-brand{
+        font-size: 17px;
+    }
+    .navbar-brand img{
+        width: 28px;
+        height: 38px;
+    }
+    .navbar-toggler-icon{
+        width: 23px;
+        height: 23px;
+    }
+    .nav-link{
+        font-size: 14px;
+    }
+    .offcanvas-title{
+        font-size: 18px;
+    }
+    .offcanvas-header{
+        padding-top: 35px;
+    }
+}
+
+
+/*------------------------------------------------------------------------------*/
+#cards_section1 {
+    padding-top: 100px; /* Space above the cards section */
+    padding-bottom: 30px; /* Space below the cards section */
+    height: 100vh; /* Make the section fill the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Style the cards container for vertical scrolling */
+.cards_section {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards horizontally */
+    gap: 15px; /* Space between cards */
+}
+
+/* Style each card */
+.card {
+    border: 10px solid white;
+    width: 12rem; /* Default width for cards */
+}
+
+.card1{
+    margin-top: 15px;
+}
+
+/* Adjust card width for larger screens */
+@media (min-width: 414px) {
+    .card {
+        width: 18rem !important; /* Increase card width */
+    }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767px) {
+    .cards_section {
+        flex-direction: column; /* Ensure cards stack vertically */
+        align-items: center; /* Center cards horizontally */
+        gap: 15px; /* Adjust gap between cards */
+    }
+
+    .card {
+        margin-bottom: 0; /* Remove bottom margin to fit layout */
+    }
+}
+
+.card img{
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.card-text{
+    font-size: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* .card-body{
+    background-color: #f0c767;
+} */
+
+
+/*-------------------------------------*/
+.modal-header{
+    background-color: #45cbf0;
+}
+
+/*-------------------------------------*/
+
+/*part2*/
+
+@media (min-width: 768px) {
+    .cards_section {
+        display: none;
+    }
+}
+
+/*-------------------------------------*/
+
+h2{
+    font-size: 16px;
+    font-weight: 800;
+    color: #09529c;
+}
+
+h3{
+    font-size: 13px;
+    font-weight: 700;
+}
+
+li, .nt1, p{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.modal-body{
+    background-image: url(/images/secondary/sbg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.modal-body1{
+    background-image: url(/images/secondary/9thclass/bg.png);
+    background-size:contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+

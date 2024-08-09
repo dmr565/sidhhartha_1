@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/7thclass.css">
+
+    <!-- Icons link -->
+    <script src="https://kit.fontawesome.com/c1483df8ea.js" crossorigin="anonymous"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/fav-1.png" type="image/x-icon">
+
+    <!-- google icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Secondary Classes</title>
+
+    <style>
+        .loading-gif {
+            max-width: 500px;
+        }
+
+        .pre-loader {
+            position: fixed;
+            z-index: 100; /** make sure this is the highest value compared to all other divs **/
+            top: 0;
+            left: 0;
+            background: #191f26;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .pre-loader.hidden {
+            animation: fadeOut 2s; /** change to 1s */
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeOut {
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
+
+</head>
+
+    <!-- navbar -->
+    <header>
+        <nav class="navbar navbar-light bg-transparent fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/fav-1.png" alt="Logo" width="30" height="40" >
+                Sai Siddhartha High School
+            </a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-black" id="offcanvasNavbarLabel">Topics</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">School Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="preprimary.html">Pre-Primary school</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="preprimary.html">Primary School</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="secondary.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="6thclass.html">6th class</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="7thclass.html">7th class</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="8thclass.html">8th class</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="9thclass.html">9th class</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="10thclass.html">10th class</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    
+    <section id="cards_section1">
+        <div class="cards_section">
+            <div class="card card1" style="width: 12rem;" data-bs-toggle="modal" data-bs-target="#popupModal">
+                <a href="#"><img src="images/secondary/7thclass/gamesandsports.png" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <p class="card-text">P.RANGA MEGHANA 7B and N.Advaith Goud 7D</p>
+                </div>
+            </div>            
+            <div class="card card2" style="width: 12rem;" data-bs-toggle="modal" data-bs-target="#popupModal1">
+                <a href="#"><img src="images/secondary/7thclass/story7.png" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <p class="card-text">Sri Surya Pranav 7C</p>
+                </div>
+            </div>
+            <div class="card card1" style="width: 12rem;" data-bs-toggle="modal" data-bs-target="#popupModal3">
+                <a href="#"><img src="images/secondary/7thclass/jokesandpuzzle.png" class="card-img-top" alt="..." style="border: 2px solid lightcoral;"></a>
+                <div class="card-body" style="background-color: lightcoral;">
+                    <p class="card-text">T.DEEPIKA 7A and K.Pratheek 7c</p>
+                </div>
+            </div>  
+            <div class="card card2" style="width: 12rem;" onclick="showModal('images/secondary/7thclass/topicimages/puzzle1.jpg');" data-toggle="modal" data-target="#imageModal">
+                <img src="images/secondary/7thclass/puzzle.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Sai Prathik Sahu 7C</p>
+                </div>
+            </div>
+            <div class="card card2" style="width: 12rem;" data-bs-toggle="modal" data-bs-target="#popupModal2">
+                <a href="#"><img src="images/secondary/7thclass/yoga.png" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <p class="card-text">E.SWATHI 7A and V.MANASWI  7A</p>
+                </div>
+            </div>
+            <div class="card card2" style="width: 12rem;" onclick="showModal('images/secondary/7thclass/draw/d.jpg');" data-toggle="modal" data-target="#imageModal">
+                <img src="images/secondary/7thclass/draw/d1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">SAI PRATHIK KUMAR SAHU 7C</p>
+                </div>
+            </div>
+
+        </div>
+        </section>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Image</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modalImage" src="" alt="Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            function showModal(imagePath) {
+                var modalImage = document.getElementById('modalImage');
+                modalImage.src = imagePath;
+                $('#imageModal').modal('show');
+            }
+        </script>
+    
+    <div class='pre-loader'>
+        <img class='loading-gif' alt='loading' src="https://media0.giphy.com/media/11FuEnXyGsXFba/source.gif"/>
+    </div>
+
+    <script type='text/javascript'>
+        window.addEventListener('load', function () {
+            document.querySelector('.pre-loader').className += ' hidden';
+        });
+    </script>
+
+
+
+<div class="modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="popupModalLabel">Importance of Sports and Games</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h3>Benefits of Games:</h3>
+                <ul>
+                    <li>Develop and nurture cognitive skills</li>
+                    <li>Increase productivity</li>
+                    <li>Enhance creativity</li>
+                    <li>Bring new experiences</li>
+                </ul>
+                <h3>Benefits of Indoor Games:</h3>
+                <ul>
+                    <li>Improve mental health</li>
+                    <li>Enhance problem-solving skills</li>
+                    <li>Boost cognitive function</li>
+                    <li>Encourage social interaction</li>
+                </ul>
+                <h3>Benefits of Outdoor Games:</h3>
+                <ul>
+                    <li>Promote physical development</li>
+                    <li>Foster personality development</li>
+                    <li>Encourage a healthy lifestyle</li>
+                </ul>
+                <h3>Difference between Sports and Games:</h3>
+                <ul>
+                    <li><strong>Sports:</strong>
+                        <ul>
+                            <li>A category of games</li>
+                            <li>Typically physical</li>
+                            <li>Often played on teams</li>
+                            <li>Competitive</li>
+                            <li>Examples: basketball, football, tennis</li>
+                        </ul>
+                    </li>
+                    <li><strong>Games:</strong>
+                        <ul>
+                            <li>A broader category</li>
+                            <li>Can be physical or mental</li>
+                            <li>Often played individually</li>
+                            <li>Can be simple or complex</li>
+                            <li>Examples: board games, card games, video games</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Benefits of Sports:</h3>
+                <ul>
+                    <li>Fiscal benefits (e.g., career opportunities, scholarships)</li>
+                    <li>Psychological benefits (e.g., teamwork, discipline)</li>
+                    <li>Mental health benefits (e.g., stress relief, confidence boost)</li>
+                    <li>Physical health benefits (e.g., improved fitness, coordination)</li>
+                </ul>
+                <p class="nt1">Note that there is some overlap between the benefits of games and sports, as sports are a type of game. However, sports often have additional benefits due to their physical and competitive nature.</p>
+                <p style="text-align: center;">
+                    <img src="images/secondary/7thclass/topicimages/1st.jpg" alt="" width="60px" height="80px"><br><br>
+                    <b>CONTENT WRITTEN BY <br>P. RANGA MEGHANA 7B</b>
+                </p>
+                <hr>
+                <br>
+                <h3>Sports and Games</h3>
+                <p style="text-align: justify; text-indent: 30px;">Sports are one of the most entertaining activities that have many benefits. sports benefits the player in many ways it is impossible to elude some of the benefits and include the others. I strongly believe when we play a sport we not only experience immense thrill, but character building also takes places- whether wish it or not. sports and games doubtedly the building blocks of the health and character of children.
+                    <br><p style="text-align: justify; text-indent: 30px;">Games teach us focus and concentration. The player focuses on strategies to win a game. for example in order to score the target in a cricket match, he keeps the target in mind and plays accordingly. That enhances his focus. The place has to do his best within the given time to win a game. This time limit makes him aware of the value of time.  keeping the time in mind</p>
+                </p>
+                <p style="text-align: center;">
+                    <img src="images/secondary/7thclass/topicimages/2nd.jpg" alt="" width="60px" height="80px"><br><br>
+                    <b>CONTENT WRITTEN BY <br>N.Advaith Goud 7D</b>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="popupModal1" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="popupModalLabel">A Humorous Story</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p style="text-align: justify; text-indent: 30px;">
+                    A long time ago, there was a boy named Rodney who lived in a village. He was very happy with his family, but his happiness did not last for long. Rodney and his fellow villagers faced a severe drought. They desperately waited for rain, but with no luck. All the crops, land, and even trees dried up. The cattle started dying, and the stream was drying up slowly.
+                </p>
+                <p style="text-align: justify; text-indent: 30px;">
+                    One night, during a meeting with the villagers, Rodney said, "Friends, we have all heard tales from our grandparents about an underground river flowing through our village. Why don't we try to find it?" The villagers agreed and started digging. They dug for days but gave up soon. However, Rodney kept on digging. When some people told him to give up, he said, "God is helping and guiding my way."
+                </p>
+                <p style="text-align: justify; text-indent: 30px;">
+                    One day, after digging deep enough, Rodney discovered water. His attitude of not giving up saved the whole village. "Never give up so easily," Rodney advised all the villagers. Now, they are never short of water. Whenever any problems arise, all the villagers come together and find a solution.
+                </p>
+                <p style="text-align: center;">
+                    <img src="images/secondary/7thclass/topicimages/3rd.jpg" alt="" width="60px" height="80px"><br><br>
+                    <b>STORY WRITTEN BY <br>Sri Surya Pranav 7C</b>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="popupModal2" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="popupModalLabel">International Yoga Day</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p style="text-align: justify; text-indent: 30px;">
+                    International Yoga Day was celebrated with spirit and joy. It was introduced by Maharishi Patanjali, who is rightly called "The Father of Yoga." Yoga is one of the six systems of Vedic philosophy. It brings the body and mind together and is built on three main elements: movement, breathing, and meditation. Yoga has many physical and mental health benefits, including improved posture, flexibility, strength, balance, and body awareness.
+                </p>
+                <p>
+                    Here are 10 amazing benefits of yoga for students:
+                </p>
+                <ul>
+                    <li>Improved physical and mental health</li>
+                    <li>Effective brain development</li>
+                    <li>Enhanced memory</li>
+                    <li>Better concentration</li>
+                    <li>Reduced stress</li>
+                    <li>Reduced eye strain and headaches</li>
+                    <li>Increased motivation and productivity</li>
+                    <li>Better sleep quality</li>
+                </ul>
+                <p style="text-align: justify; text-indent: 30px;">
+                    Yoga brings the body and mind together and is built on these three main elements: movement, breathing, and meditation.
+                </p>
+                <p style="text-align: center;">
+                    <img src="images/secondary/7thclass/topicimages/4th.jpg" alt="" width="60px" height="80px"><br><br>
+                    <b>WRITTEN BY <br>V.MANASWI 7A</b>
+                </p>
+                <hr>
+                <br>
+                <h3>Benefits of Yoga:</h3>
+                <p style="text-align: justify; text-indent: 30px;">
+                    If you aim to find the true essence of spiritual wellness, you must practice yoga. No matter what your age, gender, or physical background has been previously, yoga is beneficial.
+                </p>
+                <p>
+                    Yoga helps to promote flexibility, strength, and balance.
+                </p>
+                <ul>
+                    <li>Yoga can reduce the risk of high blood pressure, diabetes, heart disease, and obesity.</li>
+                    <li>Yoga improves digestion by boosting your metabolism.</li>
+                    <li>Yoga maintains muscle mass and joint health.</li>
+                    <li>Yoga, in conjunction with meditation, can provide spiritual enlightenment.</li>
+                </ul>
+                <p style="text-align: center;">
+                    <img src="images/secondary/7thclass/topicimages/5th.jpg" alt="" width="60px" height="80px"><br><br>
+                    <b>WRITTEN BY <br>E.SWATHI 7A</b>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="popupModal3" tabindex="-1" aria-labelledby="popupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="popupModalLabel">puzzle and Jokes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modal-body3">
+                <img src="images/secondary/7thclass/topicimages/joke.png" alt="International Yoga Day" class="modal-img modal-img3">
+                <img src="images/secondary/7thclass/topicimages/joke2.jpg" alt="International Yoga Day" class="modal-img modal-img3">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="js/js2/bootstrap.bundle.min.js"></script>
+    <script src="js/js2/jquery.slim.min.js"></script>
+    <script src="js/js2/index.js"></script>
+</body>
+</html>
