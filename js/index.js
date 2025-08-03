@@ -156,18 +156,18 @@ document.addEventListener('contextmenu', function(e) {
 });
 
 // Disable F12 and Ctrl+Shift+I (DevTools shortcuts)
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
-        e.preventDefault();
-    }
-});
+// document.addEventListener('keydown', function(e) {
+//     if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+//         e.preventDefault();
+//     }
+// });
 
-// Disable Ctrl+U (View Source)
-document.addEventListener('keydown', function(e) {
-    if (e.ctrlKey && e.key === 'u') {
-        e.preventDefault();
-    }
-});
+// // Disable Ctrl+U (View Source)
+// document.addEventListener('keydown', function(e) {
+//     if (e.ctrlKey && e.key === 'u') {
+//         e.preventDefault();
+//     }
+// });
 
 
 //add padding to the notification button
