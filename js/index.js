@@ -151,9 +151,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-});
+// document.addEventListener('contextmenu', function(e) {
+//     e.preventDefault();
+// });
 
 // Disable F12 and Ctrl+Shift+I (DevTools shortcuts)
 // document.addEventListener('keydown', function(e) {
